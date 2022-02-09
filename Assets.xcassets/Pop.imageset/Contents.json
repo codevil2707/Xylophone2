@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "pexels-vishnu-r-nair-1105666.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "pexels-vishnu-r-nair-1105666@2x.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "pexels-vishnu-r-nair-1105666@3x.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

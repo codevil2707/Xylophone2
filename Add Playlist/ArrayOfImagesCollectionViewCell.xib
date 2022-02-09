@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ArrayOfImagesCollectionViewCell" customModule="Go_Music" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Music" translatesAutoresizingMaskIntoConstraints="NO" id="n2t-XX-y9Q">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                    </imageView>
+                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rud-Ap-da8">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="rud-Ap-da8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="LPF-mX-mDA"/>
+                <constraint firstItem="n2t-XX-y9Q" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="O8Q-ca-qli"/>
+                <constraint firstItem="n2t-XX-y9Q" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ViO-HN-n6F"/>
+                <constraint firstAttribute="trailing" secondItem="n2t-XX-y9Q" secondAttribute="trailing" id="hU0-4T-W4q"/>
+                <constraint firstItem="rud-Ap-da8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="nEW-Ff-8Zp"/>
+                <constraint firstAttribute="bottom" secondItem="n2t-XX-y9Q" secondAttribute="bottom" id="soj-5c-ysa"/>
+                <constraint firstAttribute="trailing" secondItem="rud-Ap-da8" secondAttribute="trailing" id="uK0-Jm-zLT"/>
+                <constraint firstAttribute="bottom" secondItem="rud-Ap-da8" secondAttribute="bottom" id="ztu-gL-50K"/>
+            </constraints>
+            <connections>
+                <outlet property="collectionImage" destination="n2t-XX-y9Q" id="Xfm-xb-ovh"/>
+                <outlet property="overlayLayer" destination="rud-Ap-da8" id="ah0-xZ-0Ic"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="98"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Music" width="1728" height="1152"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

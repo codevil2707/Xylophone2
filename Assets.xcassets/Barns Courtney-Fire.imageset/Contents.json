@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "Male Grooming for Barns Courtney by Cici Andersen _ Rogue Magazine.jpeg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Male Grooming for Barns Courtney by Cici Andersen _ Rogue Magazine@2x.jpeg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Male Grooming for Barns Courtney by Cici Andersen _ Rogue Magazine@3x.jpeg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

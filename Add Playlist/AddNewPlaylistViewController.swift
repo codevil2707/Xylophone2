@@ -35,39 +35,29 @@ class AddNewPlaylistViewController:UIViewController{
         addInPlaylistFromSonglistTableView.dataSource = self
         addInPlaylistFromSonglistTableView?.allowsMultipleSelection = true
         setNavBarOfPlaylist()
-//        PopupViewController.delegate = self
-       
+    
     }
-//    override func viewWillLayoutSubviews() {
-//        type(of: popupImage).init(frame: CGRect(x: 0, y: 0, width: view.frame.width , height: view.frame.height))
-//    }
+
     //MARK: - setup navigation bar button Action
     
     ///on clicking add playlist name  button in add playlist
     @objc func onAdd(){
-        UIView.animate(withDuration: 10, animations: {
-            let popupView = PopupView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
+        let popupView = PopupView(frame: CGRect(x: 0,
+                                                y: 0,
+                                                width: self.view.frame.width/2,
+                                                height: self.view.frame.width/2))
+            popupView.center = CGPoint(x: self.view.frame.width/2,
+                               y: self.view.frame.height+(popupView.frame.width/2))
+            self.view.addSubview(popupView)
+        UIView.animate(withDuration: 3, animations: {
+            popupView.center = self.view.center
             self.modalTransitionStyle = .crossDissolve
             self.modalPresentationStyle = .overFullScreen
-            
-//            popupView.popupButton.addTarget(self, action: #selector(onDismiss), for: .touchUpInside)
-            self.view.addSubview(popupView)
+           
         })
     }
     
-//    func animateBottomToCentre(view:UIView){
-//        let timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { Timer in
-//            let newY = view.frame.maxY + (self.view.frame.height)*0.05
-//            if (self.view.frame.midY == view.frame.maxY{
-//                timer.invalidate()
-//            }
-//        })
-//
-//    }
-    
-    
-    
-    
+
     ///on clicking set image button in add playlist
     @objc func onImage(){
         if ((popupImage?.isHidden) != nil){

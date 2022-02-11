@@ -1,0 +1,574 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD77F73027A9054B003082C4 /* PopupImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD77F72F27A9054B003082C4 /* PopupImage.swift */; };
+		CD8B29EB276E047A00C58BFD /* Filhaal-2-Mohabbat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CD8B29EA276E047900C58BFD /* Filhaal-2-Mohabbat.mp3 */; };
+		CD8D13AF276A2C25001A30CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D13AE276A2C25001A30CB /* AppDelegate.swift */; };
+		CD8D13B1276A2C25001A30CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D13B0276A2C25001A30CB /* SceneDelegate.swift */; };
+		CD8D13B3276A2C25001A30CB /* AudioPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8D13B2276A2C25001A30CB /* AudioPlayerViewController.swift */; };
+		CD8D13B6276A2C25001A30CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD8D13B4276A2C25001A30CB /* Main.storyboard */; };
+		CD8D13BB276A2C34001A30CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD8D13B9276A2C34001A30CB /* LaunchScreen.storyboard */; };
+		CD8E064E27A7F45500A8C04C /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD8E064D27A7F45400A8C04C /* PopupView.swift */; };
+		CD9740A027AA34EE00BE30BF /* ArrayOfImagesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD97409E27AA34EE00BE30BF /* ArrayOfImagesCollectionViewCell.swift */; };
+		CD9740A127AA34EE00BE30BF /* ArrayOfImagesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD97409F27AA34EE00BE30BF /* ArrayOfImagesCollectionViewCell.xib */; };
+		CD9C5A43279EA68A0091D0C7 /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9C5A42279EA68A0091D0C7 /* PlaylistViewController.swift */; };
+		CD9C5A49279FB5870091D0C7 /* AlbumStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9C5A48279FB5870091D0C7 /* AlbumStruct.swift */; };
+		CD9C5A4B279FD6FE0091D0C7 /* PlaylistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9C5A4A279FD6FE0091D0C7 /* PlaylistTableViewCell.swift */; };
+		CD9C5A4E27A01F290091D0C7 /* AddNewPlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9C5A4D27A01F290091D0C7 /* AddNewPlaylistViewController.swift */; };
+		CD9C5A5027A0237D0091D0C7 /* SongListToAddPlaylistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9C5A4F27A0237D0091D0C7 /* SongListToAddPlaylistCell.swift */; };
+		CDAA9EA42776FF0A00676004 /* Barns Courtney-Fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDAA9EA22776FF0A00676004 /* Barns Courtney-Fire.mp3 */; };
+		CDAA9EA92777130C00676004 /* Hawayein.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDAA9EA82777130C00676004 /* Hawayein.mp3 */; };
+		CDAA9EAB2777138900676004 /* Yaariyan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDAA9EAA2777138800676004 /* Yaariyan.mp3 */; };
+		CDAA9EB02777263A00676004 /* SongInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAA9EAF2777263A00676004 /* SongInfo.swift */; };
+		CDAA9EB22777265100676004 /* PlayerLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDAA9EB12777265100676004 /* PlayerLogic.swift */; };
+		CDAF9E49276AFFE90023E470 /* Kithe Chaliye Tu.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDAF9E48276AFFE90023E470 /* Kithe Chaliye Tu.mp3 */; };
+		CDAF9E55276B61510023E470 /* Music.wav in Resources */ = {isa = PBXBuildFile; fileRef = CDAF9E54276B61510023E470 /* Music.wav */; };
+		CDB6C1C8277D9DFF007CBDDB /* One Touch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDB6C1BC277D9DFC007CBDDB /* One Touch.mp3 */; };
+		CDB6C1C9277D9DFF007CBDDB /* Jane Wale Laut Kar Tu Aaya Kyon Nahi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDB6C1BD277D9DFC007CBDDB /* Jane Wale Laut Kar Tu Aaya Kyon Nahi.mp3 */; };
+		CDB6C1CA277D9DFF007CBDDB /* Jind Meriye - Jersey.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDB6C1BE277D9DFC007CBDDB /* Jind Meriye - Jersey.mp3 */; };
+		CDB6C1CB277D9DFF007CBDDB /* Rabb Jane.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDB6C1BF277D9DFD007CBDDB /* Rabb Jane.mp3 */; };
+		CDB6C1CC277D9DFF007CBDDB /* Din Raat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDB6C1C0277D9DFD007CBDDB /* Din Raat.mp3 */; };
+		CDB6C1CD277D9DFF007CBDDB /* Soch Liya.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDB6C1C1277D9DFD007CBDDB /* Soch Liya.mp3 */; };
+		CDB6C1CE277D9DFF007CBDDB /* Brown Munde.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDB6C1C2277D9DFD007CBDDB /* Brown Munde.mp3 */; };
+		CDB6C1CF277D9DFF007CBDDB /* Main Agar Saamne.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDB6C1C3277D9DFE007CBDDB /* Main Agar Saamne.mp3 */; };
+		CDB6C1D0277D9DFF007CBDDB /* Mera Dil Bhi Kitna Pagal Hai.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDB6C1C4277D9DFE007CBDDB /* Mera Dil Bhi Kitna Pagal Hai.mp3 */; };
+		CDB6C1D1277D9DFF007CBDDB /* Aashiqui Aa Gayi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDB6C1C5277D9DFE007CBDDB /* Aashiqui Aa Gayi.mp3 */; };
+		CDB6C1D2277D9DFF007CBDDB /* Dil Galti Kar Baitha Hai.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDB6C1C6277D9DFE007CBDDB /* Dil Galti Kar Baitha Hai.mp3 */; };
+		CDB6C1D3277D9DFF007CBDDB /* Baliye Re - Jersey.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CDB6C1C7277D9DFF007CBDDB /* Baliye Re - Jersey.mp3 */; };
+		CDBF931F279E68C4007C541D /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBF931E279E68C4007C541D /* AlbumViewController.swift */; };
+		CDBF9322279E788D007C541D /* AlbumCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBF9320279E788D007C541D /* AlbumCollectionCell.swift */; };
+		CDBF9323279E788D007C541D /* AlbumCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDBF9321279E788D007C541D /* AlbumCollectionCell.xib */; };
+		CDC4524E2782F4E40056D149 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD8D13B7276A2C34001A30CB /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CD77F72F27A9054B003082C4 /* PopupImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupImage.swift; sourceTree = "<group>"; };
+		CD8B29EA276E047900C58BFD /* Filhaal-2-Mohabbat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Filhaal-2-Mohabbat.mp3"; sourceTree = "<group>"; };
+		CD8D13AB276A2C25001A30CB /* Go Music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Go Music.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD8D13AE276A2C25001A30CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD8D13B0276A2C25001A30CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CD8D13B2276A2C25001A30CB /* AudioPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerViewController.swift; sourceTree = "<group>"; };
+		CD8D13B5276A2C25001A30CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD8D13B7276A2C34001A30CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD8D13BA276A2C34001A30CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD8D13BC276A2C34001A30CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD8E064D27A7F45400A8C04C /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		CD97409E27AA34EE00BE30BF /* ArrayOfImagesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayOfImagesCollectionViewCell.swift; sourceTree = "<group>"; };
+		CD97409F27AA34EE00BE30BF /* ArrayOfImagesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArrayOfImagesCollectionViewCell.xib; sourceTree = "<group>"; };
+		CD9C5A42279EA68A0091D0C7 /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
+		CD9C5A48279FB5870091D0C7 /* AlbumStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumStruct.swift; sourceTree = "<group>"; };
+		CD9C5A4A279FD6FE0091D0C7 /* PlaylistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTableViewCell.swift; sourceTree = "<group>"; };
+		CD9C5A4D27A01F290091D0C7 /* AddNewPlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewPlaylistViewController.swift; sourceTree = "<group>"; };
+		CD9C5A4F27A0237D0091D0C7 /* SongListToAddPlaylistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListToAddPlaylistCell.swift; sourceTree = "<group>"; };
+		CDAA9EA22776FF0A00676004 /* Barns Courtney-Fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Barns Courtney-Fire.mp3"; sourceTree = "<group>"; };
+		CDAA9EA82777130C00676004 /* Hawayein.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Hawayein.mp3; sourceTree = "<group>"; };
+		CDAA9EAA2777138800676004 /* Yaariyan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Yaariyan.mp3; sourceTree = "<group>"; };
+		CDAA9EAF2777263A00676004 /* SongInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongInfo.swift; sourceTree = "<group>"; };
+		CDAA9EB12777265100676004 /* PlayerLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerLogic.swift; sourceTree = "<group>"; };
+		CDAF9E48276AFFE90023E470 /* Kithe Chaliye Tu.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Kithe Chaliye Tu.mp3"; sourceTree = "<group>"; };
+		CDAF9E54276B61510023E470 /* Music.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Music.wav; sourceTree = "<group>"; };
+		CDB6C1BC277D9DFC007CBDDB /* One Touch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "One Touch.mp3"; sourceTree = "<group>"; };
+		CDB6C1BD277D9DFC007CBDDB /* Jane Wale Laut Kar Tu Aaya Kyon Nahi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Jane Wale Laut Kar Tu Aaya Kyon Nahi.mp3"; sourceTree = "<group>"; };
+		CDB6C1BE277D9DFC007CBDDB /* Jind Meriye - Jersey.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Jind Meriye - Jersey.mp3"; sourceTree = "<group>"; };
+		CDB6C1BF277D9DFD007CBDDB /* Rabb Jane.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Rabb Jane.mp3"; sourceTree = "<group>"; };
+		CDB6C1C0277D9DFD007CBDDB /* Din Raat.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Din Raat.mp3"; sourceTree = "<group>"; };
+		CDB6C1C1277D9DFD007CBDDB /* Soch Liya.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Soch Liya.mp3"; sourceTree = "<group>"; };
+		CDB6C1C2277D9DFD007CBDDB /* Brown Munde.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Brown Munde.mp3"; sourceTree = "<group>"; };
+		CDB6C1C3277D9DFE007CBDDB /* Main Agar Saamne.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Main Agar Saamne.mp3"; sourceTree = "<group>"; };
+		CDB6C1C4277D9DFE007CBDDB /* Mera Dil Bhi Kitna Pagal Hai.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Mera Dil Bhi Kitna Pagal Hai.mp3"; sourceTree = "<group>"; };
+		CDB6C1C5277D9DFE007CBDDB /* Aashiqui Aa Gayi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Aashiqui Aa Gayi.mp3"; sourceTree = "<group>"; };
+		CDB6C1C6277D9DFE007CBDDB /* Dil Galti Kar Baitha Hai.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Dil Galti Kar Baitha Hai.mp3"; sourceTree = "<group>"; };
+		CDB6C1C7277D9DFF007CBDDB /* Baliye Re - Jersey.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Baliye Re - Jersey.mp3"; sourceTree = "<group>"; };
+		CDBF931E279E68C4007C541D /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		CDBF9320279E788D007C541D /* AlbumCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionCell.swift; sourceTree = "<group>"; };
+		CDBF9321279E788D007C541D /* AlbumCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumCollectionCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD8D13A8276A2C25001A30CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD8D13A2276A2C25001A30CB = {
+			isa = PBXGroup;
+			children = (
+				CD8D13AD276A2C25001A30CB /* Xylophone */,
+				CD8D13AC276A2C25001A30CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD8D13AC276A2C25001A30CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD8D13AB276A2C25001A30CB /* Go Music.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD8D13AD276A2C25001A30CB /* Xylophone */ = {
+			isa = PBXGroup;
+			children = (
+				CD9C5A4C27A01F030091D0C7 /* Add Playlist */,
+				CD9C5A41279EA64F0091D0C7 /* Playlist */,
+				CD9C5A40279EA5A90091D0C7 /* Album */,
+				CDAA9EAC2777258B00676004 /* Song List */,
+				CDAA9EAD2777259C00676004 /* View */,
+				CDAA9EAE277725DA00676004 /* Controller */,
+				CD8D13AE276A2C25001A30CB /* AppDelegate.swift */,
+				CD8D13B0276A2C25001A30CB /* SceneDelegate.swift */,
+				CD8D13B9276A2C34001A30CB /* LaunchScreen.storyboard */,
+				CD8D13B7276A2C34001A30CB /* Assets.xcassets */,
+				CDAF9E47276AFFB70023E470 /* Sound */,
+				CD8D13BC276A2C34001A30CB /* Info.plist */,
+			);
+			path = Xylophone;
+			sourceTree = "<group>";
+		};
+		CD9C5A40279EA5A90091D0C7 /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				CD9C5A48279FB5870091D0C7 /* AlbumStruct.swift */,
+				CDBF931E279E68C4007C541D /* AlbumViewController.swift */,
+				CDC2B90927B4D56E00ED6D64 /* AlbumCollectionCell */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
+		CD9C5A41279EA64F0091D0C7 /* Playlist */ = {
+			isa = PBXGroup;
+			children = (
+				CD9C5A42279EA68A0091D0C7 /* PlaylistViewController.swift */,
+				CD9C5A4A279FD6FE0091D0C7 /* PlaylistTableViewCell.swift */,
+			);
+			path = Playlist;
+			sourceTree = "<group>";
+		};
+		CD9C5A4C27A01F030091D0C7 /* Add Playlist */ = {
+			isa = PBXGroup;
+			children = (
+				CD9C5A4F27A0237D0091D0C7 /* SongListToAddPlaylistCell.swift */,
+				CD9C5A4D27A01F290091D0C7 /* AddNewPlaylistViewController.swift */,
+				CDC2B90827B4D50100ED6D64 /* PopupViews */,
+			);
+			path = "Add Playlist";
+			sourceTree = "<group>";
+		};
+		CDAA9EAC2777258B00676004 /* Song List */ = {
+			isa = PBXGroup;
+			children = (
+				CDAA9EAF2777263A00676004 /* SongInfo.swift */,
+				CDAA9EB12777265100676004 /* PlayerLogic.swift */,
+			);
+			path = "Song List";
+			sourceTree = "<group>";
+		};
+		CDAA9EAD2777259C00676004 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD8D13B4276A2C25001A30CB /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CDAA9EAE277725DA00676004 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CD8D13B2276A2C25001A30CB /* AudioPlayerViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CDAF9E47276AFFB70023E470 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				CDAF9E48276AFFE90023E470 /* Kithe Chaliye Tu.mp3 */,
+				CDAF9E54276B61510023E470 /* Music.wav */,
+				CDAA9EA82777130C00676004 /* Hawayein.mp3 */,
+				CD8B29EA276E047900C58BFD /* Filhaal-2-Mohabbat.mp3 */,
+				CDB6C1C5277D9DFE007CBDDB /* Aashiqui Aa Gayi.mp3 */,
+				CDB6C1C7277D9DFF007CBDDB /* Baliye Re - Jersey.mp3 */,
+				CDB6C1C2277D9DFD007CBDDB /* Brown Munde.mp3 */,
+				CDB6C1C6277D9DFE007CBDDB /* Dil Galti Kar Baitha Hai.mp3 */,
+				CDB6C1C0277D9DFD007CBDDB /* Din Raat.mp3 */,
+				CDB6C1BD277D9DFC007CBDDB /* Jane Wale Laut Kar Tu Aaya Kyon Nahi.mp3 */,
+				CDB6C1BE277D9DFC007CBDDB /* Jind Meriye - Jersey.mp3 */,
+				CDB6C1C3277D9DFE007CBDDB /* Main Agar Saamne.mp3 */,
+				CDB6C1C4277D9DFE007CBDDB /* Mera Dil Bhi Kitna Pagal Hai.mp3 */,
+				CDB6C1BC277D9DFC007CBDDB /* One Touch.mp3 */,
+				CDB6C1BF277D9DFD007CBDDB /* Rabb Jane.mp3 */,
+				CDB6C1C1277D9DFD007CBDDB /* Soch Liya.mp3 */,
+				CDAA9EA22776FF0A00676004 /* Barns Courtney-Fire.mp3 */,
+				CDAA9EAA2777138800676004 /* Yaariyan.mp3 */,
+			);
+			name = Sound;
+			path = Xylophone/Sound;
+			sourceTree = SOURCE_ROOT;
+		};
+		CDC2B90727B4D4AE00ED6D64 /* Cell of ImageCollection */ = {
+			isa = PBXGroup;
+			children = (
+				CD97409F27AA34EE00BE30BF /* ArrayOfImagesCollectionViewCell.xib */,
+				CD97409E27AA34EE00BE30BF /* ArrayOfImagesCollectionViewCell.swift */,
+			);
+			path = "Cell of ImageCollection";
+			sourceTree = "<group>";
+		};
+		CDC2B90827B4D50100ED6D64 /* PopupViews */ = {
+			isa = PBXGroup;
+			children = (
+				CD77F72F27A9054B003082C4 /* PopupImage.swift */,
+				CDC2B90727B4D4AE00ED6D64 /* Cell of ImageCollection */,
+				CD8E064D27A7F45400A8C04C /* PopupView.swift */,
+			);
+			path = PopupViews;
+			sourceTree = "<group>";
+		};
+		CDC2B90927B4D56E00ED6D64 /* AlbumCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				CDBF9320279E788D007C541D /* AlbumCollectionCell.swift */,
+				CDBF9321279E788D007C541D /* AlbumCollectionCell.xib */,
+			);
+			path = AlbumCollectionCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD8D13AA276A2C25001A30CB /* Go Music */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD8D13BF276A2C34001A30CB /* Build configuration list for PBXNativeTarget "Go Music" */;
+			buildPhases = (
+				CD8D13A7276A2C25001A30CB /* Sources */,
+				CD8D13A8276A2C25001A30CB /* Frameworks */,
+				CD8D13A9276A2C25001A30CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Go Music";
+			productName = Xylophone;
+			productReference = CD8D13AB276A2C25001A30CB /* Go Music.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD8D13A3276A2C25001A30CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					CD8D13AA276A2C25001A30CB = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = CD8D13A6276A2C25001A30CB /* Build configuration list for PBXProject "Go Music" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD8D13A2276A2C25001A30CB;
+			productRefGroup = CD8D13AC276A2C25001A30CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD8D13AA276A2C25001A30CB /* Go Music */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD8D13A9276A2C25001A30CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDC4524E2782F4E40056D149 /* Assets.xcassets in Resources */,
+				CD8D13BB276A2C34001A30CB /* LaunchScreen.storyboard in Resources */,
+				CDB6C1CA277D9DFF007CBDDB /* Jind Meriye - Jersey.mp3 in Resources */,
+				CD8B29EB276E047A00C58BFD /* Filhaal-2-Mohabbat.mp3 in Resources */,
+				CDB6C1CE277D9DFF007CBDDB /* Brown Munde.mp3 in Resources */,
+				CDB6C1CC277D9DFF007CBDDB /* Din Raat.mp3 in Resources */,
+				CDAA9EAB2777138900676004 /* Yaariyan.mp3 in Resources */,
+				CDBF9323279E788D007C541D /* AlbumCollectionCell.xib in Resources */,
+				CDB6C1D2277D9DFF007CBDDB /* Dil Galti Kar Baitha Hai.mp3 in Resources */,
+				CDB6C1CB277D9DFF007CBDDB /* Rabb Jane.mp3 in Resources */,
+				CDAA9EA42776FF0A00676004 /* Barns Courtney-Fire.mp3 in Resources */,
+				CDB6C1C8277D9DFF007CBDDB /* One Touch.mp3 in Resources */,
+				CDAF9E49276AFFE90023E470 /* Kithe Chaliye Tu.mp3 in Resources */,
+				CDB6C1CF277D9DFF007CBDDB /* Main Agar Saamne.mp3 in Resources */,
+				CDB6C1D3277D9DFF007CBDDB /* Baliye Re - Jersey.mp3 in Resources */,
+				CDAA9EA92777130C00676004 /* Hawayein.mp3 in Resources */,
+				CDB6C1D1277D9DFF007CBDDB /* Aashiqui Aa Gayi.mp3 in Resources */,
+				CDAF9E55276B61510023E470 /* Music.wav in Resources */,
+				CDB6C1CD277D9DFF007CBDDB /* Soch Liya.mp3 in Resources */,
+				CD8D13B6276A2C25001A30CB /* Main.storyboard in Resources */,
+				CD9740A127AA34EE00BE30BF /* ArrayOfImagesCollectionViewCell.xib in Resources */,
+				CDB6C1D0277D9DFF007CBDDB /* Mera Dil Bhi Kitna Pagal Hai.mp3 in Resources */,
+				CDB6C1C9277D9DFF007CBDDB /* Jane Wale Laut Kar Tu Aaya Kyon Nahi.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD8D13A7276A2C25001A30CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDAA9EB02777263A00676004 /* SongInfo.swift in Sources */,
+				CD8D13B3276A2C25001A30CB /* AudioPlayerViewController.swift in Sources */,
+				CD77F73027A9054B003082C4 /* PopupImage.swift in Sources */,
+				CD9C5A4E27A01F290091D0C7 /* AddNewPlaylistViewController.swift in Sources */,
+				CD9C5A4B279FD6FE0091D0C7 /* PlaylistTableViewCell.swift in Sources */,
+				CDBF931F279E68C4007C541D /* AlbumViewController.swift in Sources */,
+				CD8D13AF276A2C25001A30CB /* AppDelegate.swift in Sources */,
+				CDBF9322279E788D007C541D /* AlbumCollectionCell.swift in Sources */,
+				CD8E064E27A7F45500A8C04C /* PopupView.swift in Sources */,
+				CD9C5A49279FB5870091D0C7 /* AlbumStruct.swift in Sources */,
+				CD9740A027AA34EE00BE30BF /* ArrayOfImagesCollectionViewCell.swift in Sources */,
+				CD9C5A5027A0237D0091D0C7 /* SongListToAddPlaylistCell.swift in Sources */,
+				CD8D13B1276A2C25001A30CB /* SceneDelegate.swift in Sources */,
+				CDAA9EB22777265100676004 /* PlayerLogic.swift in Sources */,
+				CD9C5A43279EA68A0091D0C7 /* PlaylistViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CD8D13B4276A2C25001A30CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD8D13B5276A2C25001A30CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD8D13B9276A2C34001A30CB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD8D13BA276A2C34001A30CB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD8D13BD276A2C34001A30CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD8D13BE276A2C34001A30CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD8D13C0276A2C34001A30CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2MCAE8CXGC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Xylophone/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SimplyEntertainingLLC.Xylophone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD8D13C1276A2C34001A30CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2MCAE8CXGC;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Xylophone/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SimplyEntertainingLLC.Xylophone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD8D13A6276A2C25001A30CB /* Build configuration list for PBXProject "Go Music" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD8D13BD276A2C34001A30CB /* Debug */,
+				CD8D13BE276A2C34001A30CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD8D13BF276A2C34001A30CB /* Build configuration list for PBXNativeTarget "Go Music" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD8D13C0276A2C34001A30CB /* Debug */,
+				CD8D13C1276A2C34001A30CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD8D13A3276A2C25001A30CB /* Project object */;
+}

@@ -49,7 +49,7 @@ class AddNewPlaylistViewController:UIViewController{
             let popupView = PopupView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
             self.modalTransitionStyle = .crossDissolve
             self.modalPresentationStyle = .overFullScreen
-        
+            
 //            popupView.popupButton.addTarget(self, action: #selector(onDismiss), for: .touchUpInside)
             self.view.addSubview(popupView)
         })

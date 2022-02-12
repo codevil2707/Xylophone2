@@ -26,7 +26,7 @@ class AddNewPlaylistViewController:UIViewController{
     var newAlbumImage:UIImage?
     let arrayOfImage = [UIImage(named: "Music"),UIImage(named: "Bollywood"),UIImage(named: "Default"),UIImage(named: "Pop"),UIImage(named: "Romantic"),UIImage(named: "Sad-Romantic"),UIImage(named: "Sufi")]
    var ishiddenPopupViewForImage = false
-    var popupImage:PopupImageView?
+    var popupImage:PopupImage?
     //MARK: - lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,45 +35,67 @@ class AddNewPlaylistViewController:UIViewController{
         addInPlaylistFromSonglistTableView.dataSource = self
         addInPlaylistFromSonglistTableView?.allowsMultipleSelection = true
         setNavBarOfPlaylist()
-    
+//        PopupViewController.delegate = self
+       
     }
-
+//    override func viewWillLayoutSubviews() {
+//        type(of: popupImage).init(frame: CGRect(x: 0, y: 0, width: view.frame.width , height: view.frame.height))
+//    }
     //MARK: - setup navigation bar button Action
     
     ///on clicking add playlist name  button in add playlist
     @objc func onAdd(){
-        let popupView = PopupView(frame: CGRect(x: 0,
-                                                y: 0,
-                                                width: self.view.frame.width/2,
-                                                height: self.view.frame.width/2))
-            popupView.center = CGPoint(x: self.view.frame.width/2,
-                               y: self.view.frame.height+(popupView.frame.width/2))
-            self.view.addSubview(popupView)
-        UIView.animate(withDuration: 3, animations: {
-            popupView.center = self.view.center
+        UIView.animate(withDuration: 10, animations: {
+            let popupView = PopupView(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
             self.modalTransitionStyle = .crossDissolve
             self.modalPresentationStyle = .overFullScreen
-           
+        
+//            popupView.popupButton.addTarget(self, action: #selector(onDismiss), for: .touchUpInside)
+            self.view.addSubview(popupView)
         })
     }
     
-
+//    func animateBottomToCentre(view:UIView){
+//        let timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { Timer in
+//            let newY = view.frame.maxY + (self.view.frame.height)*0.05
+//            if (self.view.frame.midY == view.frame.maxY{
+//                timer.invalidate()
+//            }
+//        })
+//
+//    }
+    
+    
+    
+    
     ///on clicking set image button in add playlist
     @objc func onImage(){
-//        if ((popupImage?.isHidden) != nil){
-//            popupImage?.layer.opacity = 0.0
-//            popupImage?.isHidden = false
-//        } else{
-          let popupImageView = PopupImageView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
+        if ((popupImage?.isHidden) != nil){
+            popupImage?.layer.opacity = 0.0
+            popupImage?.isHidden = false
+        } else{
+        popupImage = PopupImage(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
            modalTransitionStyle = .crossDissolve
             modalPresentationStyle = .overFullScreen
-//            popupImageView.popupCollectionView.delegate = self
-//            popupImageView.popupCollectionView?.dataSource = self
-            popupImageView.isHidden = false
-            popupImageView.layer.opacity = 1
-//            popupImageView.popupButton.addTarget(self, action: <#Selector#> , for: .touchUpInside)
-           view.addSubview(popupImageView)
-//        }
+            popupImage?.popupCollectionView?.delegate = self
+            popupImage?.popupCollectionView?.dataSource = self
+            popupImage?.isHidden = false
+            popupImage?.layer.opacity = 0.0
+            popupImage?.popupButton.addTarget(self, action: #selector(onDismiss), for: .touchUpInside)
+           view.addSubview(popupImage!)
+            
+            
+            
+            
+        }
+        fadeIn(popupImage!)
+              
+    }
+    
+    @objc func onDismiss(){
+          fadeOut(popupImage!)
+    
+        
     }
    ///on clicking done button to set name image and song to create new playlist
     @objc func onDone(){
@@ -88,7 +110,35 @@ class AddNewPlaylistViewController:UIViewController{
         }
         
     }
+    
+    
+    //MARK: - animation fadeIn/fadeOut
+    func fadeIn(_ view:UIView){
+        _ = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { timer in
+            view.layer.opacity += 0.1
+            if view.layer.opacity == 1.0{
+                timer.invalidate()
+            }
+        }
+        
+//        UIView.animate(withDuration: 1.0, delay: 0, options: .curveEaseInOut) {
+//            view.layer.opacity = 1.0
+//        } completion: { succeed in
+//            if succeed {
+//                print("Done ae  ji")
+//            }
+//        }
 
+    }
+    func fadeOut(_ view:UIView){
+        _ = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { timer in
+            view.layer.opacity -= 0.1
+            if view.layer.opacity == 0.0{
+                view.isHidden = true
+                timer.invalidate()
+            }
+        }
+    }
     
   
 //MARK: - setup Navigation Bar
@@ -102,7 +152,6 @@ class AddNewPlaylistViewController:UIViewController{
         let add = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(onAdd))
         let image = UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: #selector(onImage))
         let leftItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(onClickedCancel))
-      
        navItem.rightBarButtonItems = [done,add,image]
         navItem.leftBarButtonItem = leftItem
         navBar.setItems([navItem], animated: false)

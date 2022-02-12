@@ -18,7 +18,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="LjO-Dl-6pB">
                                 <rect key="frame" x="0.0" y="94" width="390" height="716"/>
-                                <color key="backgroundColor" red="0.20392156859999999" green="0.3803921569" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="2" id="LPf-Cb-UkD">
                                     <size key="itemSize" width="200" height="200"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -29,7 +29,7 @@
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eYI-gL-klT"/>
-                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="eYI-gL-klT" firstAttribute="trailing" secondItem="LjO-Dl-6pB" secondAttribute="trailing" id="09v-P0-NbY"/>
                             <constraint firstItem="LjO-Dl-6pB" firstAttribute="top" secondItem="eYI-gL-klT" secondAttribute="top" constant="50" id="Qaj-MR-UuC"/>
@@ -142,17 +142,17 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="qgL-UQ-sC6" userLabel="volume">
-                                        <rect key="frame" x="78" y="730" width="234" height="67.333333333333371"/>
+                                        <rect key="frame" x="78" y="713.33333333333326" width="234" height="84"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="oq3-Jq-5tq">
-                                                <rect key="frame" x="-2" y="0.0" width="238" height="34.666666666666664"/>
+                                                <rect key="frame" x="-2" y="0.0" width="238" height="43"/>
                                                 <color key="minimumTrackTintColor" red="0.50980392159999999" green="0.61176470589999998" blue="0.82352941180000006" alpha="0.58999999999999997" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                 <connections>
                                                     <action selector="volumeSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="VZt-ep-Dym"/>
                                                 </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Volume" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="5w9-lU-off">
-                                                <rect key="frame" x="0.0" y="33.666666666666629" width="234" height="33.666666666666657"/>
+                                                <rect key="frame" x="0.0" y="42" width="234" height="42"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -162,8 +162,8 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="qgL-UQ-sC6" firstAttribute="top" secondItem="SF3-xq-JK4" secondAttribute="bottom" multiplier="0.87" id="3rY-76-Occ"/>
-                                    <constraint firstItem="qgL-UQ-sC6" firstAttribute="height" secondItem="SF3-xq-JK4" secondAttribute="height" multiplier="0.08" id="8we-A5-xDI"/>
+                                    <constraint firstItem="qgL-UQ-sC6" firstAttribute="top" secondItem="SF3-xq-JK4" secondAttribute="bottom" multiplier="0.85" id="3rY-76-Occ"/>
+                                    <constraint firstItem="qgL-UQ-sC6" firstAttribute="height" secondItem="SF3-xq-JK4" secondAttribute="height" multiplier="0.1" id="8we-A5-xDI"/>
                                     <constraint firstItem="qgL-UQ-sC6" firstAttribute="leading" secondItem="SF3-xq-JK4" secondAttribute="trailing" multiplier="0.2" id="AA5-BY-vc0"/>
                                     <constraint firstItem="OhM-hA-9Ad" firstAttribute="width" secondItem="SF3-xq-JK4" secondAttribute="width" multiplier="0.7" id="DJY-d6-Gtn"/>
                                     <constraint firstItem="Drf-Y7-5ze" firstAttribute="width" secondItem="SF3-xq-JK4" secondAttribute="width" multiplier="0.8" id="HOr-mP-pY0"/>
@@ -230,28 +230,27 @@
                                 <rect key="frame" x="0.0" y="137" width="390" height="707"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" focusStyle="custom" id="6Uz-IC-6MV" customClass="SongListToAddPlaylistCell" customModule="Go_Music" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="6Uz-IC-6MV" customClass="SongListToAddPlaylistCell" customModule="Go_Music" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6Uz-IC-6MV" id="I3y-Jc-R8D">
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="qMY-Nv-x8g">
-                                                    <rect key="frame" x="15.666666666666657" y="0.0" width="374.33333333333337" height="44"/>
-                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="31"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMY-Nv-x8g">
+                                                    <rect key="frame" x="2" y="0.0" width="388" height="44"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                                    <color key="textColor" red="0.89000000000000001" green="0.34928444400000003" blue="0.2359030969" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="qMY-Nv-x8g" firstAttribute="leading" secondItem="I3y-Jc-R8D" secondAttribute="trailing" multiplier="0.04" id="1d6-7r-frX"/>
+                                                <constraint firstItem="qMY-Nv-x8g" firstAttribute="leading" secondItem="I3y-Jc-R8D" secondAttribute="leading" constant="2" id="1d6-7r-frX"/>
                                                 <constraint firstItem="qMY-Nv-x8g" firstAttribute="top" secondItem="I3y-Jc-R8D" secondAttribute="top" id="6vn-RL-Aqz"/>
                                                 <constraint firstAttribute="trailing" secondItem="qMY-Nv-x8g" secondAttribute="trailing" id="V6k-h9-BFf"/>
                                                 <constraint firstAttribute="bottom" secondItem="qMY-Nv-x8g" secondAttribute="bottom" id="VkB-p6-aAf"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="songNameLabel" destination="qMY-Nv-x8g" id="tSu-if-PIP"/>
                                         </connections>
@@ -260,7 +259,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sDC-Z9-pQ7"/>
-                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="qiz-xu-grw" firstAttribute="top" secondItem="sDC-Z9-pQ7" secondAttribute="top" id="PZ4-f5-zn3"/>
                             <constraint firstItem="sDC-Z9-pQ7" firstAttribute="trailing" secondItem="qiz-xu-grw" secondAttribute="trailing" id="njc-zT-Woa"/>
@@ -369,9 +368,6 @@
         <image name="pre" width="50" height="50"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray2Color">
-            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

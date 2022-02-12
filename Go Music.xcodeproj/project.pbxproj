@@ -58,7 +58,7 @@
 		CD8D13B7276A2C34001A30CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD8D13BA276A2C34001A30CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD8D13BC276A2C34001A30CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD8E064D27A7F45400A8C04C /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		CD8E064D27A7F45400A8C04C /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PopupView.swift; path = PopupViews/PopupView.swift; sourceTree = "<group>"; };
 		CD97409E27AA34EE00BE30BF /* ArrayOfImagesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayOfImagesCollectionViewCell.swift; sourceTree = "<group>"; };
 		CD97409F27AA34EE00BE30BF /* ArrayOfImagesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArrayOfImagesCollectionViewCell.xib; sourceTree = "<group>"; };
 		CD9C5A42279EA68A0091D0C7 /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +160,7 @@
 			children = (
 				CD9C5A4F27A0237D0091D0C7 /* SongListToAddPlaylistCell.swift */,
 				CD9C5A4D27A01F290091D0C7 /* AddNewPlaylistViewController.swift */,
+				CD8E064D27A7F45400A8C04C /* PopupView.swift */,
 				CDC2B90827B4D50100ED6D64 /* PopupViews */,
 			);
 			path = "Add Playlist";
@@ -230,7 +231,6 @@
 			children = (
 				CD77F72F27A9054B003082C4 /* PopupImage.swift */,
 				CDC2B90727B4D4AE00ED6D64 /* Cell of ImageCollection */,
-				CD8E064D27A7F45400A8C04C /* PopupView.swift */,
 			);
 			path = PopupViews;
 			sourceTree = "<group>";
